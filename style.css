@@ -1,0 +1,390 @@
+*{
+    font-family:sans-serif;
+    box-sizing: border-box;
+    margin:0;
+    scroll-behavior: smooth;
+    color: #f0f0f0;
+    
+    
+}
+
+button{
+    cursor:pointer;
+}
+
+header{
+    padding: 1rem;
+    position: sticky;
+    top:0;
+    left:0;
+    background-color: #0A0A0A;
+    z-index: 20;
+    color: #f0f0f0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav  ul{
+    display:flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+nav ul a{
+    margin-left: 2rem;
+    font-weight: bold;
+}
+nav h6 a{
+    display: flex;
+    align-items: center;
+}
+nav img{
+    height: 1rem;
+    margin-right: 0.3rem;
+}
+.nav-item{
+    text-decoration: none;
+}
+
+.nav-item:hover{
+    color:#85A192;
+}
+
+#sumario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    gap : 2rem;
+}
+
+body{
+    background-color: #101516;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #101516;
+    position: relative;
+}
+
+#cntt > ul{
+    list-style: none;
+}
+
+.favoritos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.tipo1{
+    display:flex;
+    background-color: #2A3C3C;
+    border-radius: 3rem;
+    padding: 3rem;
+    margin: 2rem;     
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+.tipo1 section,.tipo2 section,.tipo3 section, .tipo4 section{
+margin: 0.5rem ;
+}
+
+
+.tipo2{
+    display:flex;
+    background-color: #3B5454;
+    border-radius: 3rem;
+    padding: 3rem;
+    margin: 2rem;     
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.tipo2 section{
+    padding: 0.5rem;
+}
+
+.tipo2 section p{
+    text-align: right;
+}
+
+.ajusteCentro2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.ajusteCentro2 p, .ajusteCentro2 a{
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.ajusteCentro2 h2{
+    text-align: justify;
+    text-align: center;
+}
+
+.ajusteCentro2 h3{
+   
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.mudaymn img{
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .8s ease;
+ }
+ 
+ .mudatmn:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    ;
+ } 
+
+ .tipo3{
+    display:flex;
+    background-color: #2A3C3C;
+    border-radius: 3rem;
+    padding: 3rem;
+    margin: 2rem;     
+    font-size: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
+    
+}
+.acerto{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.acerto p{
+    margin: 1rem;
+}
+ 
+.tipo4{
+    display:flex;
+    background-color: #3B5454;
+    border-radius: 3rem;
+    padding: 3rem;
+    margin: 2rem;     
+    font-size: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tipo4 .acerto section p, .tipo4 .acerto section section {
+    text-align: right;
+}
+
+.textlink{
+    text-decoration: none;
+}
+
+.textlink:hover{
+    color: #101516;
+}
+
+.arredondamento{
+    border-radius: 0.4rem;
+}
+
+.arredondamento2{
+    border-radius: 1rem;
+}
+
+.honra{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 3rem;
+    background-color: #232F2D;
+    color: #f0f0f0;
+    padding: 2rem;
+    margin: 2rem;
+    
+}
+
+.honra ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.honra ul li{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.discos{
+    display: flex;
+    align-items: center;
+    border-radius: 3rem;
+    color: #f0f0f0;
+    padding: 0.2rem;
+    margin: 0.2rem;
+}
+
+.discos ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    
+    flex-wrap: wrap;
+}
+
+.discos ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    list-style: none;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+    
+}
+
+.discos ul li a img{
+    height: 6rem;
+    width: 6rem;
+}
+
+
+
+.circulo{
+    clip-path: circle();
+    z-index: 0;
+}
+
+#apresentacao{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+#info >  p{
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+#interesse{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+}
+
+#interesse > ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+#interesse > ul >li{
+    display: flex;
+    margin: 1rem;
+}
+
+.img-cursos{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:2rem;
+    justify-content: center;
+
+}
+
+.img-cursos img{
+    margin: 1rem;
+}
+
+.botao{
+    padding: 1rem;
+    background-color: #111818;
+    border-radius: 1rem;
+    border:none
+    
+}
+
+.botao a{
+    text-decoration: none;
+}
+
+.botao:hover{
+    background-color: #223030;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    ;
+}
+
+#fomacao-complementar{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    font-size: smaller;
+   border-radius: 3rem;
+   border: 0.2rem solid #0A0A0A;
+   padding: 1rem;
+   background-color: #334843;
+   
+}
+
+#fomacao-complementar > li{
+    margin: 0.5rem;
+}
+
+footer{
+    padding: 1rem;
+    position:fixed;
+    bottom: 0;
+    left:0;
+    right: 0;
+    background-color: #1F1F1F;
+    z-index: 1;
+    color: #f0f0f0;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
