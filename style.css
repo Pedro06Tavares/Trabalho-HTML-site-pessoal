@@ -22,6 +22,55 @@ header{
     color: #f0f0f0;
 }
 
+body{
+    background-color: #101516;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #101516;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+#cntt > ul{
+    list-style: none;
+    border-radius: 2rem;
+    background-color: #090b0c;
+    padding: 3rem;
+    
+}
+
+#outros > ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: top;
+    list-style: none;
+    border-radius: 2rem;
+    background-color: #090b0c;
+    padding: 3rem;
+}
+
+#outros > ul > li{
+    padding: 0.5rem;
+    font-size: 20px;
+}
+
+.imgFundo{
+    display: flex;
+    position:sticky;
+}
+
+.principal{
+    padding: 3rem;
+    z-index: 2;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -63,22 +112,42 @@ nav img{
     gap : 2rem;
 }
 
-body{
-    background-color: #101516;
+
+#interesse{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
 }
 
-main{
+#interesse > ul{
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 2rem;
-    background-color: #101516;
-    position: relative;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
 }
 
-#cntt > ul{
-    list-style: none;
+#interesse > ul >li{
+    display: flex;
+    margin: 1rem;
+}
+
+.title{
+    margin-top: 3rem;
+}
+
+.explicacao-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.explicacao-text p{
+    margin: 1rem;
+    font-size: 1.3rem;
 }
 
 .favoritos{
@@ -88,6 +157,20 @@ main{
 
 }
 
+.table{
+    font-size: x-large;
+}
+
+#text-and-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-size-adjust: 5rem;
+}
+
+#text-and-image> section > img{
+    height: 20rem;
+}
 .tipo1{
     display:flex;
     background-color: #2A3C3C;
@@ -291,36 +374,20 @@ margin: 0.5rem ;
     margin: 2rem;
 }
 
-#info{
+.info{
     display: flex;
     flex-direction: column;
     margin: 2rem;
+    border-radius: 2rem;
+    background-color: #090b0c;
+    padding: 1.5rem;
 }
 
-#info >  p{
+.info p{
     padding: 1rem;
     font-size: 1.5rem;
 }
 
-#interesse{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    justify-content: center;
-}
-
-#interesse > ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    list-style: none;
-}
-
-#interesse > ul >li{
-    display: flex;
-    margin: 1rem;
-}
 
 .img-cursos{
     display: flex;
@@ -361,9 +428,8 @@ margin: 0.5rem ;
     align-items: center;
     font-size: smaller;
    border-radius: 3rem;
-   border: 0.2rem solid #0A0A0A;
+   border: 0.16rem solid #0A0A0A;
    padding: 1rem;
-   background-color: #334843;
    
 }
 
@@ -373,18 +439,16 @@ margin: 0.5rem ;
 
 footer{
     padding: 1rem;
-    position:fixed;
+    left: 0;
     bottom: 0;
-    left:0;
-    right: 0;
     background-color: #1F1F1F;
     z-index: 1;
     color: #f0f0f0;
+
 }
 
-.foot{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.menor{
+    position: fixed;
+    bottom:0;
+    right: 0;
 }
-
