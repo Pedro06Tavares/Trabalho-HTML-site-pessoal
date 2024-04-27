@@ -204,6 +204,16 @@ margin: 0.5rem ;
     text-align: right;
 }
 
+.tipo2-2{
+    display:flex;
+    background-color: #3B5454;
+    border-radius: 3rem;
+    padding: 3rem;
+    margin: 2rem;     
+    font-size: 1.5rem;
+    align-items: center;
+}
+
 .ajusteCentro2{
     display: flex;
     flex-wrap: wrap;
@@ -329,6 +339,11 @@ margin: 0.5rem ;
     align-items: center;
 }
 
+.honra ul li img{
+    height: 5rem;
+    margin: 1rem;
+}
+
 .discos{
     display: flex;
     align-items: center;
@@ -383,7 +398,7 @@ margin: 0.5rem ;
     flex-direction: column;
     margin: 2rem;
     border-radius: 2rem;
-    background-color: #090b0c;
+    background-color: #3B5454;
     padding: 1.5rem;
 }
 
@@ -416,6 +431,7 @@ margin: 0.5rem ;
 
 .botao a{
     text-decoration: none;
+    font-size: x-large;
 }
 
 .botao:hover{
