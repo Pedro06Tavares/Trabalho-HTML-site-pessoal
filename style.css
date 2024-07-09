@@ -45,21 +45,42 @@ main{
     
 }
 
+
 #outros > ul{
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    
+}
+
+
+/*#outros > ul{
+    display: flex;
     align-items: center;
     vertical-align: top;
-    list-style: none;
     border-radius: 2rem;
     background-color: #090b0c;
     padding: 3rem;
-}
+    margin: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}*/
 
 #outros > ul > li{
-    padding: 0.5rem;
-    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    list-style: none;
 }
+
+
+
+
 
 .imgFundo{
     display: flex;
@@ -112,14 +133,78 @@ nav img{
     gap : 2rem;
 }
 
+.interesses{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
-#interesse{
+.interesses  a {
+    padding: 2rem;
+}
+
+.interesses a img{
+    width: 20rem;
+    
+}
+
+.discos{
+    display: flex;
+    align-items: center;
+    border-radius: 3rem;
+    color: #f0f0f0;
+    padding: 0.2rem;
+    margin: 0.2rem;
+}
+
+.discos ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    
+    flex-wrap: wrap;
+}
+
+
+
+.discos ul li a img{
+    height: 6rem;
+    width: 6rem;
+}
+
+.discos ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    list-style: none;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+    
+}
+
+/*
+.interesses ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    list-style: none;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+    
+}
+.interesse{
     display: flex;
     padding: 1rem;
     justify-content: center;
 }
 
-#interesse > ul{
+.interesse > ul{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -130,7 +215,7 @@ nav img{
 #interesse > ul >li{
     display: flex;
     margin: 1rem;
-}
+}*/
 
 .title{
     margin-top: 3rem;
@@ -344,41 +429,6 @@ margin: 0.5rem ;
     margin: 1rem;
 }
 
-.discos{
-    display: flex;
-    align-items: center;
-    border-radius: 3rem;
-    color: #f0f0f0;
-    padding: 0.2rem;
-    margin: 0.2rem;
-}
-
-.discos ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    
-    flex-wrap: wrap;
-}
-
-.discos ul li{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    list-style: none;
-    font-size: 1rem;
-    text-align: center;
-    padding: 1rem;
-    
-}
-
-.discos ul li a img{
-    height: 6rem;
-    width: 6rem;
-}
-
 
 
 .circulo{
@@ -440,6 +490,7 @@ margin: 0.5rem ;
     transform: scale(1.1);
     ;
 }
+
 
 #fomacao-complementar{
     display: flex;
